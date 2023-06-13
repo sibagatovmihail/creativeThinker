@@ -989,7 +989,7 @@ h6 {
   }
 
   .intro__actions:not(:last-child) {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.3125rem;
   }
 
   .advantages {
@@ -1122,10 +1122,6 @@ h6 {
        -moz-column-gap: 2.5rem;
             column-gap: 2.5rem;
   }
-
-  .advantages__items {
-    padding-left: 1.5625rem;
-  }
 }
 
 @media (max-width: 20em) {
@@ -1201,6 +1197,10 @@ h6 {
 
   .advantages__items {
     gap: 1.5625rem;
+  }
+
+  .advantages__items {
+    padding-left: 0.0000000625rem;
   }
 
   .item-advantages {
@@ -1683,15 +1683,15 @@ h6 {
     }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 1.25rem  +  0vw , 1.25rem )) {
+@supports (margin-bottom: clamp( 1.25rem , 1.2275280899rem  +  0.1123595506vw , 1.3125rem )) {
     .intro__actions:not(:last-child) {
-      margin-bottom: clamp( 1.25rem , 1.25rem  +  0vw , 1.25rem );
+      margin-bottom: clamp( 1.25rem , 1.2275280899rem  +  0.1123595506vw , 1.3125rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , 1.25rem  +  0vw , 1.25rem )) {
+@supports not (margin-bottom: clamp( 1.25rem , 1.2275280899rem  +  0.1123595506vw , 1.3125rem )) {
     .intro__actions:not(:last-child) {
-      margin-bottom: calc(1.25rem + 0 * (100vw - 20rem) / 55.625);
+      margin-bottom: calc(1.25rem + 0.0625 * (100vw - 20rem) / 55.625);
     }
 }
 
@@ -2037,15 +2037,15 @@ h6 {
     }
 }
 
-@supports (padding-top: clamp( 7.5rem , 7.5rem  +  0vw , 7.5rem )) {
+@supports (padding-top: clamp( 7.4375rem , 7.3928571429rem  +  0.2232142857vw , 7.5rem )) {
     .intro {
-      padding-top: clamp( 7.5rem , 7.5rem  +  0vw , 7.5rem );
+      padding-top: clamp( 7.4375rem , 7.3928571429rem  +  0.2232142857vw , 7.5rem );
     }
 }
 
-@supports not (padding-top: clamp( 7.5rem , 7.5rem  +  0vw , 7.5rem )) {
+@supports not (padding-top: clamp( 7.4375rem , 7.3928571429rem  +  0.2232142857vw , 7.5rem )) {
     .intro {
-      padding-top: calc(7.5rem + 0 * (100vw - 20rem) / 28);
+      padding-top: calc(7.4375rem + 0.0625 * (100vw - 20rem) / 28);
     }
 }
 
@@ -2070,18 +2070,6 @@ h6 {
 @supports not (row-gap: clamp( 1.5625rem , 0.8928571429rem  +  3.3482142857vw , 2.5rem )) {
     .advantages__content {
       row-gap: calc(1.5625rem + 0.9375 * (100vw - 20rem) / 28);
-    }
-}
-
-@supports (padding-left: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem )) {
-    .advantages__items {
-      padding-left: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem )) {
-    .advantages__items {
-      padding-left: calc(0.0000000625rem + 0 * (100vw - 20rem) / 28);
     }
 }
 }
@@ -2180,6 +2168,20 @@ h6 {
 @supports not (padding-left: clamp( 1.5625rem , -0.2232142857rem  +  3.7202380952vw , 3.125rem )) {
     .advantages__items {
       padding-left: calc(1.5625rem + 1.5625 * (100vw - 48rem) / 42);
+    }
+}
+}
+
+@media (min-width: 20em) and (max-width: 47.9375em) {
+@supports (padding-left: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem )) {
+    .advantages__items {
+      padding-left: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem )) {
+    .advantages__items {
+      padding-left: calc(0.0000000625rem + 0 * (100vw - 20rem) / 27.9375);
     }
 }
 }
