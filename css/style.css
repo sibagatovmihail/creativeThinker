@@ -1291,7 +1291,7 @@ h6 {
 
 @media (max-width: 62.5em) {
   ._header-scroll .header__container {
-    min-height: 6.21875rem;
+    min-height: 6.1875rem;
   }
 
   .header__container {
@@ -1989,15 +1989,15 @@ h6 {
 }
 
 @media (min-width: 62.5em) and (max-width: 90em) {
-@supports (min-height: clamp( 6.21875rem , 6.1477272727rem  +  0.1136363636vw , 6.25rem )) {
+@supports (min-height: clamp( 6.1875rem , 6.0454545455rem  +  0.2272727273vw , 6.25rem )) {
     ._header-scroll .header__container {
-      min-height: clamp( 6.21875rem , 6.1477272727rem  +  0.1136363636vw , 6.25rem );
+      min-height: clamp( 6.1875rem , 6.0454545455rem  +  0.2272727273vw , 6.25rem );
     }
 }
 
-@supports not (min-height: clamp( 6.21875rem , 6.1477272727rem  +  0.1136363636vw , 6.25rem )) {
+@supports not (min-height: clamp( 6.1875rem , 6.0454545455rem  +  0.2272727273vw , 6.25rem )) {
     ._header-scroll .header__container {
-      min-height: calc(6.21875rem + 0.03125 * (100vw - 62.5rem) / 27.5);
+      min-height: calc(6.1875rem + 0.0625 * (100vw - 62.5rem) / 27.5);
     }
 }
 
